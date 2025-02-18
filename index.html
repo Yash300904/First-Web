@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            box-sizing: border-box ;
+            margin: 0px;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav "
+                                 "vnav maincontent"
+                                 "footer footer";
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 50px auto auto;
+        }
+        /* .logo{
+            height: 50px;
+            width: 50px;
+            size: 1opx;
+        } */
+        .spacebar{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+        header{
+            background-color: azure;
+            display: flex;
+            grid-column: 1/3;  
+            align-items: center;
+            background-color: rgb(224, 228, 172);
+            height: 50px;         
+        }
+        .navbar{
+            background-color: rgb(181, 229, 229);
+            grid-column: 1/2;
+            grid-row: 2/3;
+            box-sizing: border-box;
+        }
+        .link{
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .maincontent{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            background-color: rgb(26, 48, 48);
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .box {
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        footer{
+            background-color: rgb(191, 213, 104);
+            border-radius: 10px;
+            padding: 0px;
+            margin: 0px;
+            grid-column: 1/3;
+            grid-row: 3/4; 
+            height: 120px;
+            box-sizing: border-box;
+            grid-area: footer;
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 10px;
+        }
+        .logo{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 0px;
+        }
+        .button{
+            color: white;
+            font-size: large;
+            display: inline;
+            height: 50px;
+            width: 300px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: rgb(26, 21, 31);
+            color: white(83, 83, 165);
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+        .link{
+            display: block;
+            width: 300px;
+            height: 60px;
+            border: 2px solid black;
+            text-align: center;
+            text-decoration: none;
+        }
+        .but{
+            background-color: orange;
+            align-items: center;
+            position: absolute;
+        }
+        #img1{
+            margin-top: 6px;
+            margin-left: 50px;
+           
+        }
+        #img2{
+            display: inline;
+            margin-top: 6px;
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="spacebar">
+        <input type="text" placeholder="search here">
+        <button>Go</button>
+    </div>
+    <div class="container">
+        <header>
+           <button class="button"><a href="https://in.bookmyshow.com/explore/movies-pune"></a>movies</button>
+           <button class="button"><a href="https://in.bookmyshow.com/explore/c/stream"></a>Stream</button>
+           <button class="button"><a href="https://in.bookmyshow.com/explore/events-pune"></a>Events</button>
+           <button class="button"><a href="https://in.bookmyshow.com/explore/sports-pune"></a>Sports</button>
+           <button class="button"><a href="https://in.bookmyshow.com/explore/plays-pune"></a>Plays</button>
+        </header>
+        <div class="navbar">
+        <button><a href="#" class="link">Shirts</a></button>
+        <button><a href="link2" class="link">Pants</a></button>
+        <button><a href="link3" class="link">Party Wear</a></button>
+        <button><a href="link4" class="link">Cosmetics</a></button>
+        <button><a href="link5" class="link">Grocery</a></button>
+        <button><a href="link6" class="link">Shoes</a></button>
+        <button><a href="link7" class="link">Bags</a></button>
+        <button><a href="link8" class="link">Moblies</a></button>
+        </div>
+        <div class="maincontent">
+            <div class="box"> Ticket Bokking CHHAVA is avilable now <br> <br><a href="https://in.bookmyshow.com/movies/chhaava/ET00408691" target="_blank"><button>Book Now</button></a></div>
+            <div class="box">Ticket Bokking SANAM TERI KASAM is avilable now <BR> <BR> <a href="https://in.bookmyshow.com/pune/movies/sanam-teri-kasam/ET00036895" target="_blank"><button>Book Now</button></a></div>
+            <div class="box"> Ticket Bokking SKY FORCE is avilable now <br> <br><a href="https://in.bookmyshow.com/pune/movies/sky-force/ET00371539" target="_blank"><button>Book Now</button></a></div>
+            <div class="box">Ticket Bokking LOVEYAPA is avilable now <br> <br><a href="https://in.bookmyshow.com/pune/movies/loveyapa/ET00427632" target="_blank"><button>Book Now</button></a></div>
+            <div class="box">Ticket Bokking DEVA is avilable now <br> <br><a href="https://in.bookmyshow.com/pune/movies/deva/ET00374104" target="_blank"><button>Book Now</button></a></div>
+            <div class="box">Ticket Bokking CONCLAVE is avilable now <br> <br><a href="https://in.bookmyshow.com/pune/movies/conclave/ET00410886" target="_blank"><button>Book Now</button></a></div>
+            <div class="box">Ticket Bokking LAILA is avilable now <br> <br><a href="https://in.bookmyshow.com/pune/movies/laila/ET00403539" target="_blank"><button>Book Now</button></a></div>
+            <div class="box">Ticket Bokking CHAMPION is avilable now <br> <br><a href="https://in.bookmyshow.com/pune/movies/companion/ET00414405" target="_blank"><button>Book Now</button></a></div>
+            <div class="box">Ticket Bokking DAVEED is avilable now <br> <br><a href="https://in.bookmyshow.com/pune/movies/daveed/ET00432337" target="_blank"><button>Book Now</button></a></div>
+        </div>
+        <footer>
+            <a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Yash Kale\Downloads\insta logo.jpeg" alt="" height="46px" width="50px" id="img1"></a>
+            <a href="https://in.search.yahoo.com/search?fr=mcafee&type=E210IN714G0&p=linkedin" target="_blank"><img src="C:\Users\Yash Kale\Downloads\link.jpeg" alt="" height="46px" width="50px" id="img2"></a>
+        </footer>    
+        <img src="C:\Users\Yash Kale\Downloads\loggo.jpeg" class="logo" alt=""> 
+    </div>
+    
+</body>
+</html>
